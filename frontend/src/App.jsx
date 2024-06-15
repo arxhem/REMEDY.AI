@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Landing from "./pages/Landing"
 import Login from "./pages/Login"
-import Signup from "./pages/Signup"
+import {SignUp} from "./pages/Signup"
 import Chat from "./pages/Chat"
 import Home from "./pages/Home"
 import { ToastContainer } from "react-toastify"
@@ -24,7 +24,7 @@ const routes = [{
 },
 {
   path : "/signup",
-  element : <Signup/>
+  element : <SignUp/>
 },
 {
   path : "/home",

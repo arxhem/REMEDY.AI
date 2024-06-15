@@ -4,6 +4,9 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Groq } from "groq-sdk";
 import { BASE_URL, RAG_BACKEND_URL } from "../utils/constants";
+import {exportedArr} from '../pages/Signup'; 
+
+console.log(exportedArr)
 
 const groq = new Groq({
   apiKey: import.meta.env.VITE_GROQ_API_KEY,
@@ -52,11 +55,35 @@ function DietPlan() {
 
   const fetchDietPlanHandler = async (parsedDiseases) => {
     try {
+      console.log(exportedArr[5]);
+
       const chatCompletion = await groq.chat.completions.create({
+        
         messages: [
           {
+            
             role: "user",
-            content: `Give me a diet plan and my disease if I am having the following diseases and medical problems: ${parsedDiseases}. Just give me at least 5 points in numbers and a max of 8 points, no other response, not in the beginning and not in the end, just the 5 points`,
+            content: `For my specific conditions and physical parameters, I need a personalized diet plan. Here are my details:
+
+- Diseases/Conditions: ${parsedDiseases}
+- Age: ${exportedArr[5]}
+- Height: ${exportedArr[6]} cm
+- Weight: ${exportedArr[7]} kg
+
+Based on these details, please suggest a detailed diet plan that can help manage or improve my health condition(s). The diet plan should include:
+
+1. **Meal Suggestions**: Provide specific meals for breakfast, lunch, dinner, and snacks, considering my diseases, age, height, and weight.
+2. **Nutritional Guidelines**: Outline the nutritional principles I should follow (e.g., low sugar, high fiber, etc.).
+3. **Food Restrictions**: Specify foods or ingredients I should avoid due to my conditions.
+4. **Caloric Intake**: Suggest a daily caloric intake range appropriate for my height, weight, and age.
+5. **Hydration Advice**: Recommend daily water intake or other fluids beneficial for my health.
+6. **Additional Tips**: Include any other health or lifestyle recommendations that would benefit my overall well-being.
+
+Please start the diet plan with: 'For your specific conditions and physical parameters, your diet should be...'
+
+Thank you!
+
+`,
           },
         ],
         model: "mixtral-8x7b-32768",

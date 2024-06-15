@@ -48,7 +48,7 @@ function Login() {
       await fetchDiseaseHandler();
       const data = await response.json();
       toast.success(data.message);
-      navigate("/dashboard");
+      navigate("/home");
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
     } finally {

@@ -1,10 +1,13 @@
-import { Suspense, useState } from "react";
+import { Suspense, useState, useEffect } from "react";
 import Button from "../components/ui/button";
 import Authanimation from "../components/ui/authanimation";
 import { Link, useNavigate } from "react-router-dom";
 import HashLoader from "react-spinners/HashLoader";
 import { toast } from "react-toastify";
 import { BASE_URL } from "../utils/constants";
+
+// Define a module-scoped variable to store the array values
+let exportedArr = [];
 
 function SignUp() {
   const [loading, setLoading] = useState(false);
@@ -16,14 +19,27 @@ function SignUp() {
     gender: "",
     occupation: "",
     age: "",
+    height: "",
+    weight: "",
   });
 
-  const handleInputChange = async (e) => {
+  const [arr, setArr] = useState([]);
+
+  const handleInputChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    // Update arr whenever formData changes
+    const valuesArray = Object.values(formData);
+    setArr(valuesArray);
+
+    // Update the module-scoped exportedArr
+    exportedArr = valuesArray;
+  }, [formData]);
 
   const submitHandler = async (event) => {
     event.preventDefault();
@@ -38,7 +54,7 @@ function SignUp() {
         body: JSON.stringify(formData),
         credentials: "include",
       });
-      if (res.status == 409) {
+      if (res.status === 409) {
         throw new Error("Something went wrong");
       }
       const { message } = await res.json();
@@ -53,14 +69,14 @@ function SignUp() {
 
   return (
     <>
-      <main className="flex flex-col sm:flex-row items-center justify-center sm:items-start mt-24  gap-12 sm:gap-6">
+      <main className="flex flex-col sm:flex-row items-center justify-center sm:items-start mt-24 gap-12 sm:gap-6">
         <Suspense>
           <div className="w-[40%] sm:p-0 lg:p-24 lg:pt-0 -z-10">
             <Authanimation />
           </div>
         </Suspense>
         <div className="w-[40%] rounded-lg shadow-md md:p-10">
-          <h3 className="text-center text-[22px] leading-9 font-bold mb-10 ">
+          <h3 className="text-center text-[22px] leading-9 font-bold mb-10">
             Create an <span className="text-primary"> account</span>
           </h3>
           <form className="space-y-6" onSubmit={submitHandler}>
@@ -107,7 +123,7 @@ function SignUp() {
                 onChange={handleInputChange}
               >
                 <option value="" disabled>
-                  Select
+                  Gender
                 </option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -115,7 +131,7 @@ function SignUp() {
               </select>
               <input
                 type="number"
-                placeholder="Enter your Age"
+                placeholder="Age"
                 name="age"
                 min={0}
                 value={formData.age}
@@ -128,29 +144,42 @@ function SignUp() {
                 required
                 className="input"
               />
-            </div>
-            <div className="mb-[3.5rem] flex items-center justify-between">
-              {/* <input
-                type="text"
-                placeholder="Enter your Occupation"
-                name="occupation"
-                value={formData.occupation}
-                onChange={handleInputChange}
+              <input
+                type="number"
+                placeholder="Height"
+                name="height"
+                min={0}
+                value={formData.height}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    height: e.target.value === "" ? "" : Number(e.target.value),
+                  })
+                }
                 required
                 className="input"
-              /> */}
-              <label htmlFor="" className="text-head  text-[16px] leading-7" >
-                Are you a :
-                <select name="role" className="text-text  text-[15px] leading-[4.75rem] px-4 py-3 ">
-                  <option value="Doctor">Doctor</option>
-                  <option value="Patient">Patient</option>
-                </select>  
-              </label>
+              />
+              <input
+                type="number"
+                placeholder="Weight"
+                name="weight"
+                min={0}
+                value={formData.weight}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    weight: e.target.value === "" ? "" : Number(e.target.value),
+                  })
+                }
+                required
+                className="input"
+              />
             </div>
+            <div className="mb-[3.5rem] flex items-center justify-between"></div>
 
             <div className="mt-10">
               <Button
-                disabled={loading && true}
+                disabled={loading}
                 type="submit"
                 className={`w-full rounded-lg py-3 px-4`}
               >
@@ -178,4 +207,5 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+// Export the updated array
+export { SignUp, exportedArr };

@@ -24,7 +24,7 @@ const headerNavItems = [
 const authenticatedNavItems = [
   
   {
-    path:"https://d0a6-14-99-164-234.ngrok-free.app/",
+    path:"https://7490-14-99-164-234.ngrok-free.app/",
     name:"Dashboard"
 
   },
