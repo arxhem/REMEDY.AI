@@ -1,0 +1,201 @@
+[
+    {
+        "doctor_name": "Dr. T. Ramakrishna",
+        "specialization": "Oral And MaxilloFacial Surgeon, Dentist, Dental Surgeon, Implantologist",
+        "qualification": "BDS, MDS - Oral & Maxillofacial Surgery",
+        "experience": "26",
+        "address": "Dental Profiles Clinic, 607, 2nd Cross, RBI Layout, BANGALORE 560078, Landmark: Opposite Elite Prominende, Behind Invivo Hospital, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500"
+    },
+    {
+        "doctor_name": "Dr. T. Ramakrishna",
+        "specialization": "Oral And MaxilloFacial Surgeon, Dentist, Dental Surgeon, Implantologist",
+        "qualification": "BDS, MDS - Oral & Maxillofacial Surgery",
+        "experience": "26",
+        "address": "Dental Profiles, 100, SJR Complex, Doddakannelli - Kaadubeesanahalli Road, Landmark: Back Gate of Adarsh Palm Retreat Villa Phase 3 And Gear International School, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500"
+    },
+    {
+        "doctor_name": "Dr. T. Ramakrishna",
+        "specialization": "Oral And MaxilloFacial Surgeon, Dentist, Dental Surgeon, Implantologist",
+        "qualification": "BDS, MDS - Oral & Maxillofacial Surgery",
+        "experience": "26",
+        "address": "Dental Profiles, Number 161, 24th Main Road, Landmark: Opposite Spring Car Care & Near Nandhini Hotel, Bangalore",
+        "star_rating": "4.5",
+        "fees": "500"
+    },
+    {
+        "doctor_name": "Dr. Jnanesha H.C",
+        "specialization": "Orthodontist, Implantologist, Dentist, Dental Surgeon",
+        "qualification": "BDS, MDS - Orthodontics",
+        "address": "Jayanagar 4 Block, Bangalore\nExcel Dental Care\n88/4, 19th Main, 39th Cross, Jayanagar 4th T Block, Landmark: Near Sai Baba Temple Opposite to Nandana Vana Park Caffe Coffee Day, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "22"
+    },
+    {
+        "doctor_name": "Dr. Aarti Talikoti",
+        "specialization": "Dentist, Dental Surgeon, Implantologist, Prosthodontist",
+        "qualification": "BDS, MDS - Prosthodontics",
+        "address": "Infinit Dental Solutions, 152/A & B, 39th Cross, 9th Block, Landmark: Opposite Karnataka Bank, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "21"
+    },
+    {
+        "doctor_name": "Dr. Sindhu S Kumar",
+        "specialization": "Dentist, Cosmetic/Aesthetic Dentist, Dental Surgeon",
+        "qualification": "BDS",
+        "address": "Excel Dental Care, 884, 19th Main, 39th Cross, Jayanagar 4th T Block, Landmark: Near Sai Baba Temple Opposit to Nandana Vana Park Caffe Coffee Day, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "14"
+    },
+    {
+        "doctor_name": "Dr. Shambhu H Shivanna",
+        "specialization": "Dentist, Dental Surgeon, Prosthodontist, Implantologist, Cosmetic/Aesthetic Dentist",
+        "qualification": "BDS, MDS - Prosthodontist And Crown Bridge",
+        "address": "Infinit Dental Solutions, 152/A & B, 39th Cross, 9th Block, Landmark: Opposite Karnataka Bank, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "25"
+    },
+    {
+        "doctor_name": "Dr. Umesh B M",
+        "specialization": "Dental Surgeon, Implantologist",
+        "address": "Denta Uno Dental, 5.0, 4th Cross, KR Layout , Near Siddeshwar Theatre, Landmark: Near Siddeshwara Theatre., JP Nagar 6 Phase, Bangalore",
+        "star_rating": "100% (236 patients)",
+        "fees": "300",
+        "experience": "19 years"
+    },
+    {
+        "doctor_name": "Dr. Amith Kukke",
+        "specialization": "Dentist",
+        "address": "Smile Dental Care, 1743, 9th Cross, Landmark: opp.HDFC Bank, JP Nagar 2 Phase, Bangalore",
+        "star_rating": "4.5",
+        "fees": "\u00e2\u201a\u00b9500",
+        "experience": "22"
+    },
+    {
+        "doctor_name": "Dr. Sushma B T",
+        "specialization": "Dentist, Dental Surgeon, Cosmetic/Aesthetic Dentist",
+        "address": "Denta Uno Dental, 5.0, 4th Cross, KR Layout , Near Siddeshwar Theatre, Landmark: Near Siddeshwara Theatre., Bangalore",
+        "star_rating": "100%",
+        "fees": "\u00e2\u201a\u00b9350",
+        "experience": "14"
+    },
+    {
+        "doctor_name": "Dr. Sanjay Mohanchandra",
+        "specialization": "Dentist, Oral And MaxilloFacial Surgeon, Implantologist, Cosmetic/Aesthetic Dentist",
+        "qualification": "BDS, MDS - Oral & Maxillofacial Surgery",
+        "address": "Ashirwad Dental Clinic, 680, 17Th Cross, 26Th Main, KR Layout, Landmark: Near Nandini Hotel, Bangalore",
+        "star_rating": "4.5",
+        "fees": "\u00e2\u201a\u00b9500",
+        "experience": "36 years"
+    },
+    {
+        "doctor_name": "Dr. Suresh S",
+        "specialization": "Prosthodontist, Implantologist",
+        "address": "Smiles Smith Advanced Dental Care, 18 Sy Number 99/2A Puttenhalli Kothnur Dinne Main Road, Landmark: Above Polar Bear Icecreams, Bangalore",
+        "star_rating": "97%",
+        "fees": "500",
+        "experience": "30"
+    },
+    {
+        "doctor_name": "Dr. T. Ramakrishna",
+        "specialization": "Oral And MaxilloFacial Surgeon, Dentist, Dental Surgeon, Implantologist",
+        "address": "607, 2nd Cross, RBI Layout, BANGALORE 560078, Landmark: Opposite Elite Prominende, Behind Invivo Hospital, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500",
+        "experience": "26"
+    },
+    {
+        "doctor_name": "Dr. Jnanesha H.C",
+        "specialization": "Orthodontist, Implantologist, Dentist, Dental Surgeon",
+        "address": "Excel Dental Care, 884, 19th Main, 39th Cross, Jayanagar 4th T Block, Landmark: Near Sai Baba Temple Opposite to Nandana Vana Park Caffe Coffee Day, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "22"
+    },
+    {
+        "doctor_name": "Dr. Aarti Talikoti",
+        "specialization": "Dentist, Dental Surgeon, Implantologist, Prosthodontist",
+        "address": "Infinit Dental Solutions, 152/A & B, 39th Cross, 9th Block, Landmark: Opposite Karnataka Bank, Jayanagar 9 Block, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "21 Years"
+    },
+    {
+        "doctor_name": "Dr. Sindhu S Kumar",
+        "specialization": "Dentist, Cosmetic/Aesthetic Dentist, Dental Surgeon",
+        "address": "Jayanagar 4 Block, Bangalore, Excel Dental Care, 884, 19th Main, 39th Cross, Jayanagar 4th T Block, Landmark: Near Sai Baba Temple Opposit to Nandana Vana Park Caffe Coffee Day, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "14"
+    },
+    {
+        "doctor_name": "Dr. Shambhu H Shivanna",
+        "specialization": "Dentist, Dental Surgeon, Prosthodontist, Implantologist, Cosmetic/Aesthetic Dentist",
+        "qualification": "BDS, MDS - Prosthodontist And Crown Bridge",
+        "address": "152/A & B, 39th Cross, 9th Block, Landmark: Opposite Karnataka Bank, Bangalore",
+        "star_rating": "5.0",
+        "fees": "300",
+        "experience": "25"
+    },
+    {
+        "doctor_name": "Dr. Shambhu H Shivanna",
+        "specialization": "Dentist, Dental Surgeon, Prosthodontist, Implantologist, Cosmetic/Aesthetic Dentist",
+        "qualification": "BDS, MDS - Prosthodontist And Crown Bridge",
+        "address": "275, 2nd Floor, Whitefield Main Road, Landmark: Opposite Herbs & Spices Restaurant, Beside Vijaya Bank, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500",
+        "experience": "25"
+    },
+    {
+        "doctor_name": "Dr. Umesh B M",
+        "specialization": "Dental Surgeon, Implantologist",
+        "address": "Denta Uno Dental, 5.0, 4th Cross, KR Layout, Near Siddeshwar Theatre, Landmark: Near Siddeshwara Theatre, JP Nagar 6 Phase, Bangalore",
+        "star_rating": "100%",
+        "fees": "300",
+        "experience": "19"
+    },
+    {
+        "doctor_name": "Dr. Sushma B T",
+        "specialization": [
+            "Dentist",
+            "Dental Surgeon",
+            "Cosmetic/Aesthetic Dentist"
+        ],
+        "qualification": "BDS",
+        "address": "Denta Uno Dental, 4th Cross, KR Layout, Near Siddeshwar Theatre, Landmark: Near Siddeshwara Theatre., Bangalore",
+        "star_rating": "100%",
+        "fees": "350",
+        "experience": "14"
+    },
+    {
+        "doctor_name": "Dr. Sanjay Mohanchandra",
+        "specialization": "Dentist, Oral And MaxilloFacial Surgeon, Implantologist, Cosmetic/Aesthetic Dentist",
+        "address": "Ashirwad Dental Clinic, 680, 17Th Cross, 26Th Main, KR Layout, Landmark: Near Nandini Hotel, JP Nagar 6 Phase, Bangalore",
+        "star_rating": "4.5",
+        "fees": "500",
+        "experience": "36"
+    },
+    {
+        "doctor_name": "Dr. Suresh S",
+        "specialization": "Prosthodontist, Implantologist",
+        "address": "Smiles Smith Advanced Dental Care, 18 Sy Number 99/2A Puttenhalli Kothnur Dinne Main Road, Landmark: Above Polar Bear Icecreams, JP Nagar 7 Phase, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500",
+        "experience": "30"
+    },
+    {
+        "doctor_name": "Dr. Supreeth Manipal",
+        "specialization": "Cosmetic/Aesthetic Dentist, Implantologist, Dentist",
+        "address": "Smile Sculptors Dental Clinic, Amogh Arcade, 8, 1St Floor, Kothanur Main Road, Landmark: Next To Neighbourhood Hospital, Opposite To Vijaya Bank, Bangalore",
+        "star_rating": "5.0",
+        "fees": "500",
+        "experience": "26"
+    }
+]

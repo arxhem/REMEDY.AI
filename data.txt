@@ -1,0 +1,11 @@
+```python
+{
+    "doctor_name": "Dr. Aarti Talikoti",
+    "specialization": ["Dentist", "Dental Surgeon", "Implantologist", "Prosthodontist"],
+    "qualification": ["BDS", "MDS - Prosthodontics"],
+    "address": "Infinit Dental Solutions, 152/A & B, 39th Cross, 9th Block, Landmark: Opposite Karnataka Bank, Bangalore",
+    "star_rating": "5.0",
+    "fees": "300",
+    "experience": "21"
+}
+```

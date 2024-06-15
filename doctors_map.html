@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c4f2879860bd3bedc39da6fb916b756a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c4f2879860bd3bedc39da6fb916b756a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c4f2879860bd3bedc39da6fb916b756a = L.map(
+                "map_c4f2879860bd3bedc39da6fb916b756a",
+                {
+                    center: [13.0610556, 77.587222],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe6a0cc06b00ecee5992d7b54bc67a20 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fe6a0cc06b00ecee5992d7b54bc67a20.addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_7e73fda13d73f5c1aba917f58cccda58 = L.marker(
+                [13.0610556, 77.587222],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_c275881043f70ca956b67fad81e6e565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e73fda13d73f5c1aba917f58cccda58.setIcon(icon_c275881043f70ca956b67fad81e6e565);
+        
+    
+            marker_7e73fda13d73f5c1aba917f58cccda58.bindTooltip(
+                `<div>
+                     User Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d28083fac4f34301bb6a001b5ac0144e = L.marker(
+                [12.8915217, 77.5798563],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_38ccc7c8c80a71ad5e4b6cabf7667df9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d28083fac4f34301bb6a001b5ac0144e.setIcon(icon_38ccc7c8c80a71ad5e4b6cabf7667df9);
+        
+    
+        var popup_d36de54b54efb7c57846e5d6455c3509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2bc92beb6fa429189ce1ff52d39a783 = $(`<div id="html_c2bc92beb6fa429189ce1ff52d39a783" style="width: 100.0%; height: 100.0%;">Dr. T. Ramakrishna</div>`)[0];
+                popup_d36de54b54efb7c57846e5d6455c3509.setContent(html_c2bc92beb6fa429189ce1ff52d39a783);
+            
+        
+
+        marker_d28083fac4f34301bb6a001b5ac0144e.bindPopup(popup_d36de54b54efb7c57846e5d6455c3509)
+        ;
+
+        
+    
+    
+            marker_d28083fac4f34301bb6a001b5ac0144e.bindTooltip(
+                `<div>
+                     Dr. T. Ramakrishna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acc58ce481e39681a646de0e9cb3f2d5 = L.polyline(
+                [[13.0610556, 77.587222], [12.8915217, 77.5798563]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_9242d8c09cb91f6e9c69e07d9c8c39f5 = L.marker(
+                [12.9176952, 77.6973403],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_c103bff282695f9542c755bbd81463c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9242d8c09cb91f6e9c69e07d9c8c39f5.setIcon(icon_c103bff282695f9542c755bbd81463c5);
+        
+    
+        var popup_db2ce2384eb038c77ce7b06999f4ca07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a3aec4e7cce25c7111d537d080173dd = $(`<div id="html_2a3aec4e7cce25c7111d537d080173dd" style="width: 100.0%; height: 100.0%;">Dr. T. Ramakrishna</div>`)[0];
+                popup_db2ce2384eb038c77ce7b06999f4ca07.setContent(html_2a3aec4e7cce25c7111d537d080173dd);
+            
+        
+
+        marker_9242d8c09cb91f6e9c69e07d9c8c39f5.bindPopup(popup_db2ce2384eb038c77ce7b06999f4ca07)
+        ;
+
+        
+    
+    
+            marker_9242d8c09cb91f6e9c69e07d9c8c39f5.bindTooltip(
+                `<div>
+                     Dr. T. Ramakrishna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_252a14063f362300a0ad17773fd874a2 = L.polyline(
+                [[13.0610556, 77.587222], [12.9176952, 77.6973403]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_eb306aa05e09180a73b6bd9828f91c84 = L.marker(
+                [12.9044702, 77.5859476],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_0b27035115f272980032e0b63b0da154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb306aa05e09180a73b6bd9828f91c84.setIcon(icon_0b27035115f272980032e0b63b0da154);
+        
+    
+        var popup_bef0bda378af39809501ceb2d7bb6629 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec2430c4f9c25ee436512dde91de6f78 = $(`<div id="html_ec2430c4f9c25ee436512dde91de6f78" style="width: 100.0%; height: 100.0%;">Dr. T. Ramakrishna</div>`)[0];
+                popup_bef0bda378af39809501ceb2d7bb6629.setContent(html_ec2430c4f9c25ee436512dde91de6f78);
+            
+        
+
+        marker_eb306aa05e09180a73b6bd9828f91c84.bindPopup(popup_bef0bda378af39809501ceb2d7bb6629)
+        ;
+
+        
+    
+    
+            marker_eb306aa05e09180a73b6bd9828f91c84.bindTooltip(
+                `<div>
+                     Dr. T. Ramakrishna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_650353ca6745e7966ed841d160284295 = L.polyline(
+                [[13.0610556, 77.587222], [12.9044702, 77.5859476]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_b5f8bc8df20ef380b9f50f4912e13505 = L.marker(
+                [12.9208153, 77.59021039999999],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_7ac40913f406f438f289d7529bb58d16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5f8bc8df20ef380b9f50f4912e13505.setIcon(icon_7ac40913f406f438f289d7529bb58d16);
+        
+    
+        var popup_672275871d1347b34621e198c0cc4d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6f46198ccca06169d3982d3e22d15a3 = $(`<div id="html_f6f46198ccca06169d3982d3e22d15a3" style="width: 100.0%; height: 100.0%;">Dr. Jnanesha H.C</div>`)[0];
+                popup_672275871d1347b34621e198c0cc4d5c.setContent(html_f6f46198ccca06169d3982d3e22d15a3);
+            
+        
+
+        marker_b5f8bc8df20ef380b9f50f4912e13505.bindPopup(popup_672275871d1347b34621e198c0cc4d5c)
+        ;
+
+        
+    
+    
+            marker_b5f8bc8df20ef380b9f50f4912e13505.bindTooltip(
+                `<div>
+                     Dr. Jnanesha H.C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8f50983f41229456f0ce95db1fff6334 = L.polyline(
+                [[13.0610556, 77.587222], [12.9208153, 77.59021039999999]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_99ea1f8c2bd21f1326ed4e1e90f9ba89 = L.marker(
+                [12.9206, 77.5949378],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_fe48b8c22d0a7fc02ab175c164fea3af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99ea1f8c2bd21f1326ed4e1e90f9ba89.setIcon(icon_fe48b8c22d0a7fc02ab175c164fea3af);
+        
+    
+        var popup_8a3001617da4f51e2f2d3428d6919405 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90de364429fc97e49421de0b9661d7ac = $(`<div id="html_90de364429fc97e49421de0b9661d7ac" style="width: 100.0%; height: 100.0%;">Dr. Aarti Talikoti</div>`)[0];
+                popup_8a3001617da4f51e2f2d3428d6919405.setContent(html_90de364429fc97e49421de0b9661d7ac);
+            
+        
+
+        marker_99ea1f8c2bd21f1326ed4e1e90f9ba89.bindPopup(popup_8a3001617da4f51e2f2d3428d6919405)
+        ;
+
+        
+    
+    
+            marker_99ea1f8c2bd21f1326ed4e1e90f9ba89.bindTooltip(
+                `<div>
+                     Dr. Aarti Talikoti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_627dbb018608266e7b0122a6226330df = L.polyline(
+                [[13.0610556, 77.587222], [12.9206, 77.5949378]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_04a60ebec460464c8982630c57821f6a = L.marker(
+                [12.9254199, 77.59184900000001],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_dcbde306527ac905f7e38975cf5279ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_04a60ebec460464c8982630c57821f6a.setIcon(icon_dcbde306527ac905f7e38975cf5279ab);
+        
+    
+        var popup_f44ef5c74bbd54ddd6acff4aefc239b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_555c1e8971cfd43777d3244fd1e17d95 = $(`<div id="html_555c1e8971cfd43777d3244fd1e17d95" style="width: 100.0%; height: 100.0%;">Dr. Sindhu S Kumar</div>`)[0];
+                popup_f44ef5c74bbd54ddd6acff4aefc239b0.setContent(html_555c1e8971cfd43777d3244fd1e17d95);
+            
+        
+
+        marker_04a60ebec460464c8982630c57821f6a.bindPopup(popup_f44ef5c74bbd54ddd6acff4aefc239b0)
+        ;
+
+        
+    
+    
+            marker_04a60ebec460464c8982630c57821f6a.bindTooltip(
+                `<div>
+                     Dr. Sindhu S Kumar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eabc839f69633564786f3ac28e3fdbdd = L.polyline(
+                [[13.0610556, 77.587222], [12.9254199, 77.59184900000001]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_57adb1c13fca071900d7411f64991e92 = L.marker(
+                [12.9206, 77.5949378],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_52a1b534ef7f750ee649b6d05032b1dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57adb1c13fca071900d7411f64991e92.setIcon(icon_52a1b534ef7f750ee649b6d05032b1dd);
+        
+    
+        var popup_717783b8b9302554b95989cc485f5228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7eb5dcbf11208bf106761261becda6 = $(`<div id="html_8f7eb5dcbf11208bf106761261becda6" style="width: 100.0%; height: 100.0%;">Dr. Shambhu H Shivanna</div>`)[0];
+                popup_717783b8b9302554b95989cc485f5228.setContent(html_8f7eb5dcbf11208bf106761261becda6);
+            
+        
+
+        marker_57adb1c13fca071900d7411f64991e92.bindPopup(popup_717783b8b9302554b95989cc485f5228)
+        ;
+
+        
+    
+    
+            marker_57adb1c13fca071900d7411f64991e92.bindTooltip(
+                `<div>
+                     Dr. Shambhu H Shivanna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0cf2fdbc71e6e4b1fe0d61ea05fbd7e1 = L.polyline(
+                [[13.0610556, 77.587222], [12.9206, 77.5949378]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_99e13ac8386ba3bbda2c58dfabba43aa = L.marker(
+                [12.9039313, 77.5816502],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_f8bbe7b0919e4c355c29ebdbe2c1fb8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99e13ac8386ba3bbda2c58dfabba43aa.setIcon(icon_f8bbe7b0919e4c355c29ebdbe2c1fb8d);
+        
+    
+        var popup_fe99691c1c405bc2c4c3dc65d6d615d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23fe57605c684db37dba8577e7dc4d73 = $(`<div id="html_23fe57605c684db37dba8577e7dc4d73" style="width: 100.0%; height: 100.0%;">Dr. Umesh B M</div>`)[0];
+                popup_fe99691c1c405bc2c4c3dc65d6d615d4.setContent(html_23fe57605c684db37dba8577e7dc4d73);
+            
+        
+
+        marker_99e13ac8386ba3bbda2c58dfabba43aa.bindPopup(popup_fe99691c1c405bc2c4c3dc65d6d615d4)
+        ;
+
+        
+    
+    
+            marker_99e13ac8386ba3bbda2c58dfabba43aa.bindTooltip(
+                `<div>
+                     Dr. Umesh B M
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f395a9a03ff503adb83ca405b5cca96c = L.polyline(
+                [[13.0610556, 77.587222], [12.9039313, 77.5816502]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_a1aae4b9e97bcea0e6b8a46b78fe0189 = L.marker(
+                [12.9103762, 77.5919191],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_538e14ebf67fa292297df25717a5d86b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1aae4b9e97bcea0e6b8a46b78fe0189.setIcon(icon_538e14ebf67fa292297df25717a5d86b);
+        
+    
+        var popup_c444755580ab0ce8a1e488b79dd95747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f322ee248ed51ba987802eab7524ab2 = $(`<div id="html_9f322ee248ed51ba987802eab7524ab2" style="width: 100.0%; height: 100.0%;">Dr. Amith Kukke</div>`)[0];
+                popup_c444755580ab0ce8a1e488b79dd95747.setContent(html_9f322ee248ed51ba987802eab7524ab2);
+            
+        
+
+        marker_a1aae4b9e97bcea0e6b8a46b78fe0189.bindPopup(popup_c444755580ab0ce8a1e488b79dd95747)
+        ;
+
+        
+    
+    
+            marker_a1aae4b9e97bcea0e6b8a46b78fe0189.bindTooltip(
+                `<div>
+                     Dr. Amith Kukke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aaa9d6c71e72633054f124ef9c75458f = L.polyline(
+                [[13.0610556, 77.587222], [12.9103762, 77.5919191]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_83496577eda1b7dac6053af1e4de6b4e = L.marker(
+                [12.9039313, 77.5816502],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_5036efafc7cf4ca156ba2b72101ab277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83496577eda1b7dac6053af1e4de6b4e.setIcon(icon_5036efafc7cf4ca156ba2b72101ab277);
+        
+    
+        var popup_929ae6ea8f32c5b2c3a2c500a12fc155 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04f5e152e7d3a59648a3e8f6edbc5acf = $(`<div id="html_04f5e152e7d3a59648a3e8f6edbc5acf" style="width: 100.0%; height: 100.0%;">Dr. Sushma B T</div>`)[0];
+                popup_929ae6ea8f32c5b2c3a2c500a12fc155.setContent(html_04f5e152e7d3a59648a3e8f6edbc5acf);
+            
+        
+
+        marker_83496577eda1b7dac6053af1e4de6b4e.bindPopup(popup_929ae6ea8f32c5b2c3a2c500a12fc155)
+        ;
+
+        
+    
+    
+            marker_83496577eda1b7dac6053af1e4de6b4e.bindTooltip(
+                `<div>
+                     Dr. Sushma B T
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_56803da7b68f98144c973c631b759b23 = L.polyline(
+                [[13.0610556, 77.587222], [12.9039313, 77.5816502]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_adb789d4b1c3130f8735f4b631718a8c = L.marker(
+                [12.9053388, 77.5845355],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_ce728fd8db252917634824ebc47555ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_adb789d4b1c3130f8735f4b631718a8c.setIcon(icon_ce728fd8db252917634824ebc47555ea);
+        
+    
+        var popup_b19b9ef834fbaf9b5919e0ecc6f2c622 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d680093d9a9c236eebbc68e1c94cae58 = $(`<div id="html_d680093d9a9c236eebbc68e1c94cae58" style="width: 100.0%; height: 100.0%;">Dr. Sanjay Mohanchandra</div>`)[0];
+                popup_b19b9ef834fbaf9b5919e0ecc6f2c622.setContent(html_d680093d9a9c236eebbc68e1c94cae58);
+            
+        
+
+        marker_adb789d4b1c3130f8735f4b631718a8c.bindPopup(popup_b19b9ef834fbaf9b5919e0ecc6f2c622)
+        ;
+
+        
+    
+    
+            marker_adb789d4b1c3130f8735f4b631718a8c.bindTooltip(
+                `<div>
+                     Dr. Sanjay Mohanchandra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0972a5de1958b1b62a613ce085c9a6fb = L.polyline(
+                [[13.0610556, 77.587222], [12.9053388, 77.5845355]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_02709ef079e1a4a86e190760e79fd996 = L.marker(
+                [12.8938256, 77.5812849],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_4a7457314f0c98af3549a3ed6559ae55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_02709ef079e1a4a86e190760e79fd996.setIcon(icon_4a7457314f0c98af3549a3ed6559ae55);
+        
+    
+        var popup_1517a5a274f7b448018df053ff63693e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80a8ac31009f3841cbd9a0c31b43391 = $(`<div id="html_e80a8ac31009f3841cbd9a0c31b43391" style="width: 100.0%; height: 100.0%;">Dr. Suresh S</div>`)[0];
+                popup_1517a5a274f7b448018df053ff63693e.setContent(html_e80a8ac31009f3841cbd9a0c31b43391);
+            
+        
+
+        marker_02709ef079e1a4a86e190760e79fd996.bindPopup(popup_1517a5a274f7b448018df053ff63693e)
+        ;
+
+        
+    
+    
+            marker_02709ef079e1a4a86e190760e79fd996.bindTooltip(
+                `<div>
+                     Dr. Suresh S
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6538ae6d6500d616eec269a3ec2269c2 = L.polyline(
+                [[13.0610556, 77.587222], [12.8938256, 77.5812849]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_fa1503e8f83d62b9abbe50db277b681a = L.marker(
+                [12.891477, 77.57984800000001],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_6f51c0aa64493416d95a0882e6b86a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa1503e8f83d62b9abbe50db277b681a.setIcon(icon_6f51c0aa64493416d95a0882e6b86a77);
+        
+    
+        var popup_710b30b6d74269d2dbdd230f46d0d9ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4d8f1d64ee7ba5759d4679010205ddc = $(`<div id="html_d4d8f1d64ee7ba5759d4679010205ddc" style="width: 100.0%; height: 100.0%;">Dr. T. Ramakrishna</div>`)[0];
+                popup_710b30b6d74269d2dbdd230f46d0d9ea.setContent(html_d4d8f1d64ee7ba5759d4679010205ddc);
+            
+        
+
+        marker_fa1503e8f83d62b9abbe50db277b681a.bindPopup(popup_710b30b6d74269d2dbdd230f46d0d9ea)
+        ;
+
+        
+    
+    
+            marker_fa1503e8f83d62b9abbe50db277b681a.bindTooltip(
+                `<div>
+                     Dr. T. Ramakrishna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc8b84fc396a9ddac3f146dc9c612e63 = L.polyline(
+                [[13.0610556, 77.587222], [12.891477, 77.57984800000001]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_bcc667d5f22aec15ed5eb3dcbab24d65 = L.marker(
+                [12.9254199, 77.59184900000001],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_79d273472e72d8807d7dced39ad52f75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcc667d5f22aec15ed5eb3dcbab24d65.setIcon(icon_79d273472e72d8807d7dced39ad52f75);
+        
+    
+        var popup_d9d5c8c109636227a75c26a0b67608c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb05299f257ccf07b544ab3728d45ce = $(`<div id="html_ecb05299f257ccf07b544ab3728d45ce" style="width: 100.0%; height: 100.0%;">Dr. Jnanesha H.C</div>`)[0];
+                popup_d9d5c8c109636227a75c26a0b67608c2.setContent(html_ecb05299f257ccf07b544ab3728d45ce);
+            
+        
+
+        marker_bcc667d5f22aec15ed5eb3dcbab24d65.bindPopup(popup_d9d5c8c109636227a75c26a0b67608c2)
+        ;
+
+        
+    
+    
+            marker_bcc667d5f22aec15ed5eb3dcbab24d65.bindTooltip(
+                `<div>
+                     Dr. Jnanesha H.C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5791f70fc1934e4b74d48c3d2b83237 = L.polyline(
+                [[13.0610556, 77.587222], [12.9254199, 77.59184900000001]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_2d14d107734e2ccc712c54268c154495 = L.marker(
+                [12.9206, 77.5949378],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_03d548f65ce9694b35d1ff00e74ef0d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d14d107734e2ccc712c54268c154495.setIcon(icon_03d548f65ce9694b35d1ff00e74ef0d9);
+        
+    
+        var popup_d17cae40bc772ef3c942ede584b8e2b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b02daab4449540a019107aa762365d5 = $(`<div id="html_6b02daab4449540a019107aa762365d5" style="width: 100.0%; height: 100.0%;">Dr. Aarti Talikoti</div>`)[0];
+                popup_d17cae40bc772ef3c942ede584b8e2b0.setContent(html_6b02daab4449540a019107aa762365d5);
+            
+        
+
+        marker_2d14d107734e2ccc712c54268c154495.bindPopup(popup_d17cae40bc772ef3c942ede584b8e2b0)
+        ;
+
+        
+    
+    
+            marker_2d14d107734e2ccc712c54268c154495.bindTooltip(
+                `<div>
+                     Dr. Aarti Talikoti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ddd5c922dfa256c46733b239fd976e84 = L.polyline(
+                [[13.0610556, 77.587222], [12.9206, 77.5949378]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_c4d6089d585acf9e308bb58e75cfd2a0 = L.marker(
+                [12.9259401, 77.5830419],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_3f6518bc09def12a65c661067a235ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4d6089d585acf9e308bb58e75cfd2a0.setIcon(icon_3f6518bc09def12a65c661067a235ec6);
+        
+    
+        var popup_e617e16f1e79eb009366bf0ccbbb0928 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0695384f00304a2c58bc309acb8c8974 = $(`<div id="html_0695384f00304a2c58bc309acb8c8974" style="width: 100.0%; height: 100.0%;">Dr. Sindhu S Kumar</div>`)[0];
+                popup_e617e16f1e79eb009366bf0ccbbb0928.setContent(html_0695384f00304a2c58bc309acb8c8974);
+            
+        
+
+        marker_c4d6089d585acf9e308bb58e75cfd2a0.bindPopup(popup_e617e16f1e79eb009366bf0ccbbb0928)
+        ;
+
+        
+    
+    
+            marker_c4d6089d585acf9e308bb58e75cfd2a0.bindTooltip(
+                `<div>
+                     Dr. Sindhu S Kumar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_704eae2186cda9565870a20d13f1788b = L.polyline(
+                [[13.0610556, 77.587222], [12.9259401, 77.5830419]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_363dc61bd076d9deb19a2a025434568b = L.marker(
+                [12.9286886, 77.5115991],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_b8829a38ddcb9f4d9149546b2173bb5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_363dc61bd076d9deb19a2a025434568b.setIcon(icon_b8829a38ddcb9f4d9149546b2173bb5e);
+        
+    
+        var popup_80676cc79543afe6718163035f05c4cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df7414e4c043a6e32b8fa6dc336f31b0 = $(`<div id="html_df7414e4c043a6e32b8fa6dc336f31b0" style="width: 100.0%; height: 100.0%;">Dr. Shambhu H Shivanna</div>`)[0];
+                popup_80676cc79543afe6718163035f05c4cb.setContent(html_df7414e4c043a6e32b8fa6dc336f31b0);
+            
+        
+
+        marker_363dc61bd076d9deb19a2a025434568b.bindPopup(popup_80676cc79543afe6718163035f05c4cb)
+        ;
+
+        
+    
+    
+            marker_363dc61bd076d9deb19a2a025434568b.bindTooltip(
+                `<div>
+                     Dr. Shambhu H Shivanna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2d29d61d26d60821d568929a573d12b7 = L.polyline(
+                [[13.0610556, 77.587222], [12.9286886, 77.5115991]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_aab0b591327f9b4ec657b0bb143fed54 = L.marker(
+                [12.9621242, 77.7488135],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_7e819d7bf9d385c4b50438b4a16badd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aab0b591327f9b4ec657b0bb143fed54.setIcon(icon_7e819d7bf9d385c4b50438b4a16badd9);
+        
+    
+        var popup_23ed9c67739aee6fd2830002e47819d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c586a872e8c1a5c4b07367cf8b97f6c = $(`<div id="html_9c586a872e8c1a5c4b07367cf8b97f6c" style="width: 100.0%; height: 100.0%;">Dr. Shambhu H Shivanna</div>`)[0];
+                popup_23ed9c67739aee6fd2830002e47819d6.setContent(html_9c586a872e8c1a5c4b07367cf8b97f6c);
+            
+        
+
+        marker_aab0b591327f9b4ec657b0bb143fed54.bindPopup(popup_23ed9c67739aee6fd2830002e47819d6)
+        ;
+
+        
+    
+    
+            marker_aab0b591327f9b4ec657b0bb143fed54.bindTooltip(
+                `<div>
+                     Dr. Shambhu H Shivanna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2568f86271f0986db7df61653e395555 = L.polyline(
+                [[13.0610556, 77.587222], [12.9621242, 77.7488135]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_e7c0f9077f6a9798b95710c6a8b911a8 = L.marker(
+                [12.9039313, 77.5816502],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_d02ecc7e0b519dfb218d66c95d4424f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7c0f9077f6a9798b95710c6a8b911a8.setIcon(icon_d02ecc7e0b519dfb218d66c95d4424f1);
+        
+    
+        var popup_7d0e1595a5ee2dccb04342856fc1cfa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ad70c4220a58294df511d58531b27d4 = $(`<div id="html_6ad70c4220a58294df511d58531b27d4" style="width: 100.0%; height: 100.0%;">Dr. Umesh B M</div>`)[0];
+                popup_7d0e1595a5ee2dccb04342856fc1cfa0.setContent(html_6ad70c4220a58294df511d58531b27d4);
+            
+        
+
+        marker_e7c0f9077f6a9798b95710c6a8b911a8.bindPopup(popup_7d0e1595a5ee2dccb04342856fc1cfa0)
+        ;
+
+        
+    
+    
+            marker_e7c0f9077f6a9798b95710c6a8b911a8.bindTooltip(
+                `<div>
+                     Dr. Umesh B M
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_15a8fe3f436e9bcd0f7ec080e7f1f602 = L.polyline(
+                [[13.0610556, 77.587222], [12.9039313, 77.5816502]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_7d386f4a5f42f2f4592d94dc74c87cf2 = L.marker(
+                [12.9039313, 77.5816502],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_aed768a39ea16404be22b3d9c425b9b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d386f4a5f42f2f4592d94dc74c87cf2.setIcon(icon_aed768a39ea16404be22b3d9c425b9b6);
+        
+    
+        var popup_c7a5418e972f5cb642f77f074b5cf353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ea62cd99800d8210ff274e40159f97a = $(`<div id="html_3ea62cd99800d8210ff274e40159f97a" style="width: 100.0%; height: 100.0%;">Dr. Sushma B T</div>`)[0];
+                popup_c7a5418e972f5cb642f77f074b5cf353.setContent(html_3ea62cd99800d8210ff274e40159f97a);
+            
+        
+
+        marker_7d386f4a5f42f2f4592d94dc74c87cf2.bindPopup(popup_c7a5418e972f5cb642f77f074b5cf353)
+        ;
+
+        
+    
+    
+            marker_7d386f4a5f42f2f4592d94dc74c87cf2.bindTooltip(
+                `<div>
+                     Dr. Sushma B T
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3b5e3b592b3acd53dfe559483829f691 = L.polyline(
+                [[13.0610556, 77.587222], [12.9039313, 77.5816502]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_a592eaafdec14a9dc6f894d37de0920a = L.marker(
+                [12.9053388, 77.5845355],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_b8e56b08022dfbca6830a77628a27a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a592eaafdec14a9dc6f894d37de0920a.setIcon(icon_b8e56b08022dfbca6830a77628a27a96);
+        
+    
+        var popup_cb8e3c8f2381f9ddcec96b6682e2ff8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c776617160ed9ecf21ada678e4f56269 = $(`<div id="html_c776617160ed9ecf21ada678e4f56269" style="width: 100.0%; height: 100.0%;">Dr. Sanjay Mohanchandra</div>`)[0];
+                popup_cb8e3c8f2381f9ddcec96b6682e2ff8d.setContent(html_c776617160ed9ecf21ada678e4f56269);
+            
+        
+
+        marker_a592eaafdec14a9dc6f894d37de0920a.bindPopup(popup_cb8e3c8f2381f9ddcec96b6682e2ff8d)
+        ;
+
+        
+    
+    
+            marker_a592eaafdec14a9dc6f894d37de0920a.bindTooltip(
+                `<div>
+                     Dr. Sanjay Mohanchandra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6be9e8b9817556d1492d821e34caed98 = L.polyline(
+                [[13.0610556, 77.587222], [12.9053388, 77.5845355]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_29932e857f998d31a85b08271612dec1 = L.marker(
+                [12.8771114, 77.583981],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_4daf7502671e1d71279de80a1cf88ffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29932e857f998d31a85b08271612dec1.setIcon(icon_4daf7502671e1d71279de80a1cf88ffa);
+        
+    
+        var popup_ef66a28061bfb6013ca25415e52d5200 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31b9efbdc0192c26ac04108e4595281e = $(`<div id="html_31b9efbdc0192c26ac04108e4595281e" style="width: 100.0%; height: 100.0%;">Dr. Suresh S</div>`)[0];
+                popup_ef66a28061bfb6013ca25415e52d5200.setContent(html_31b9efbdc0192c26ac04108e4595281e);
+            
+        
+
+        marker_29932e857f998d31a85b08271612dec1.bindPopup(popup_ef66a28061bfb6013ca25415e52d5200)
+        ;
+
+        
+    
+    
+            marker_29932e857f998d31a85b08271612dec1.bindTooltip(
+                `<div>
+                     Dr. Suresh S
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e4ec58879d7bad41307539e4e1d90595 = L.polyline(
+                [[13.0610556, 77.587222], [12.8771114, 77.583981]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var marker_4e00a813a4ff8821e71b248cd88dcae6 = L.marker(
+                [12.9715987, 77.5945627],
+                {}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+    
+            var icon_d7eab755bdc06be1a5dc6e0c700e797b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e00a813a4ff8821e71b248cd88dcae6.setIcon(icon_d7eab755bdc06be1a5dc6e0c700e797b);
+        
+    
+        var popup_f99433fec624e2808d48e33b54be59b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4239fea59eb9d6ee3ee69fcfac580989 = $(`<div id="html_4239fea59eb9d6ee3ee69fcfac580989" style="width: 100.0%; height: 100.0%;">Dr. Supreeth Manipal</div>`)[0];
+                popup_f99433fec624e2808d48e33b54be59b0.setContent(html_4239fea59eb9d6ee3ee69fcfac580989);
+            
+        
+
+        marker_4e00a813a4ff8821e71b248cd88dcae6.bindPopup(popup_f99433fec624e2808d48e33b54be59b0)
+        ;
+
+        
+    
+    
+            marker_4e00a813a4ff8821e71b248cd88dcae6.bindTooltip(
+                `<div>
+                     Dr. Supreeth Manipal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cd18fdc57bc5ff7c215f18f120c58deb = L.polyline(
+                [[13.0610556, 77.587222], [12.9715987, 77.5945627]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c4f2879860bd3bedc39da6fb916b756a);
+        
+</script>
+</html>
