@@ -1,1 +1,1 @@
-## Implementation of Basic RAG with some amount of post processing on Mistral-7B
+## Implementation of Remedy AI Backend based on FastAPI with all endpoints
